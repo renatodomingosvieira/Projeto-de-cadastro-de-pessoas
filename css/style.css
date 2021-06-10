@@ -1,0 +1,163 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family:'Open sans', 'helvetica', sans-serif;
+
+}
+
+.cadastro {
+  height: 100%;
+  /**/
+  padding: 50px;
+  /*new*/
+  background: #cfcfcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro_container {
+  min-height: auto;/**/
+  width: 700px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  /*AUXILIA PARA O PADDING MANTER AS PROPORÇÃO NÃO DEIXANDO MAIOR*/
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1em rgb(194, 194, 194);
+}
+
+
+.cadastro_title {
+  font-size: 30px;
+  /*new*/
+  font-weight: bold;
+  margin-bottom: 32px;
+  background-color: linear-gradient(120deg, #00B2EE, #104E8B, #00B2EE);
+}
+
+.cadastro_sub-titles {
+  /*new*/
+  font-size: 16px;
+  text-align: left;
+  color: #303030;
+  margin-bottom: 10px;
+  font-weight: none;
+
+}
+
+p { /*new*/
+  color: #777;
+  font-size: 11px;
+
+
+}
+
+.cadastro_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: center;
+
+}
+
+
+
+/*INPUT*/
+.cadastro_input {
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  /*texto dentro afasta ele da borda*/
+  border: unset;
+  outline: none;
+  position: relative;
+}
+
+
+.cadastro_imput-border {
+  height: 2px;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #cfcfcf;
+  transition: .3s ease-in-out;
+}
+
+.cadastro_imput-border::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  margin-bottom: 16px;
+  background: linear-gradient(120deg, #00B2EE, #104E8B, #00B2EE);
+  transition: .3s ease-in-out;
+}
+
+.cadastro_input:focus + .cadastro_imput-border::after {
+  width: 100%;
+}
+
+
+/*BOTÃO ENVIAR */
+.cadastro_submit {
+
+  height: 48px;
+  width: 100%;
+  outline: none; /*sem linha no link*/
+  background: linear-gradient(120deg, #00B2EE, #1863ad, #00B2EE,#1863ad);
+  background-size: 300%; /*margin-bottom: 32px;*/
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold; /*font em negrito*/
+
+  border: unset;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+
+
+
+  outline-style: outset;
+  outline-color: #00B2EE;
+  outline-width: 1px;
+  border-radius: 2px;
+}
+
+.cadastro_submit:hover {
+  background-position: right;
+}
+
+
+/* Esconde o input FILE */
+input[type='file'] {
+  display: none;
+}
+
+/* Aparência que terá o seletor de arquivo */
+label {
+  height: 30px;
+  width: 100%;
+  background-color: #ffffff;
+
+  /*BORDAS*/
+  outline-style: outset;
+  outline-color: #777;
+  outline-width: 1px;
+  border-radius: 2px;
+
+  margin-bottom: 20px;
+  padding: 15px 0px 0px 0px; /*Ajuda a centralizar a letra */
+    
+  /*DESCRIÇÃO*/
+  color: #777;
+  font-size: 14px;
+  
+  text-align: center; /*texto alinhado ao centro*/
+   cursor: pointer;
+}
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro - COVID19</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $cpf = $("#cpf");
+			$cpf.mask('000.000.000-00')
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $tel1 = $("#tel1");
+			$tel1.mask('(00) 00000-0000')
+		})
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $tel2 = $("#tel2");
+			$tel2.mask('(00) 00000-0000')
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $cep = $("#cep");
+			$cep.mask('00000-000')
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $cnpj = $("#cnpj");
+			$cnpj.mask('00.000.000/0000-00')
+		})
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $cep2 = $("#cep2");
+			$cep2.mask('00000-000')
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $data_nasc = $("#data_nasc");
+			$data_nasc.mask('00/00/0000')
+		})
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var $cnpj = $("cnpj");
+			$cnpj.mask('00.000.000/0000-00')
+		})
+	</script>
+</head>
+
+<body>
+
+	<main class="cadastro">
+		<div class="cadastro_container">
+
+			<h1 class="cadastro_title"> CADASTRO DE PROFISSIONAIS </h1>
+			
+			
+
+			<form class="cadastro_form" action="cadastro_covid.php" method="POST">
+
+				<br>
+				<h4 class="cadastro_sub-titles">INFORMAÇÕES PESSOAIS</h4>
+
+				<input type="text" name="nome" class="cadastro_input" id="nome" placeholder=" Nome Completo"  required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="cpf" class="cadastro_input" id="cpf" placeholder="CPF"  required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="nome_mae" class="cadastro_input" id="nome_mae" placeholder="Nome da Mãe" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="data_nasc" class="cadastro_input" id="data_nasc" placeholder="Data de Nascimento"  required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="endereco" class="cadastro_input" id="endereco" placeholder="Endereço" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="bairro" class="cadastro_input" id="bairro" placeholder="Bairro"  required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="cep" class="cadastro_input" id="cep" placeholder="CEP" required>
+				<spam class="cadastro_imput-border"></spam>
+				
+
+				<br>
+				<br>
+				<h4 class="cadastro_sub-titles">INFORMAÇÕES PARA CONTATO</h4>
+				
+				<input type="text" name="tel1" class="cadastro_input" id="tel1" placeholder="Nº telefone" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="tel2" class="cadastro_input" id="tel2" placeholder="Nº Celular"required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="E-mail" name="email" class="cadastro_input" id="email" placeholder="E-mail" required>
+				<spam class="cadastro_imput-border"></spam>
+
+
+				<br>
+				<br>
+				<h4 class="cadastro_sub-titles">INFORMAÇÕES PROFISSIONAIS</h4>
+				
+				<input type="text" name="profissao" class="cadastro_input" id="profissao" placeholder="Profissão" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="num_registro" class="cadastro_input" id="numregistro" placeholder="Nº de Registro" required>
+				<spam class="cadastro_imput-border"></spam>
+				
+
+				<br>
+				<br>
+				<h4 class="cadastro_sub-titles">CARTÃO NACIONAL DE SAÚDE</h4>
+				
+				<input type="text" name="num_cns" class="cadastro_input" id="num_cns"  placeholder="Nº do CNS"  required>
+				<spam class="cadastro_imput-border"></spam>
+				
+
+
+				<br>
+				<br>
+				<h4 class="cadastro_sub-titles">INFORMAÇÕES DA EMPRESA</h4>
+
+				<input type="text" name="local_trabalho" class="cadastro_input" id="local_trabalho" placeholder="Nome Empresa" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="cnes" class="cadastro_input" id="cnes" placeholder="CNES da Empresa"  required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="num_prontuario" class="cadastro_input" id="num_prontuario" placeholder="Nº Prontuário" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="cnpj" class="cadastro_input" id="cnpj" placeholder="CNPJ" required>
+				<spam class="cadastro_imput-border"></spam> 								
+				<input type="text" name="end_estabelecimento" class="cadastro_input" id="end_estabelecimento" placeholder="Endereço" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="bairro2" class="cadastro_input" id="bairro2"  placeholder="Bairro" required>
+				<spam class="cadastro_imput-border"></spam>
+				<input type="text" name="cep2" class="cadastro_input" id="cep2"  placeholder="CEP" required>
+				<spam class="cadastro_imput-border"></spam>
+
+				<br>
+				<br>
+				<h4 class="cadastro_sub-titles">ENVIO DE DOCUMENTOS </h4>
+				<br>
+				
+				<form class="cadastro_form" action="uploadarquivos.php" method="post" enctype="multipart/form-data">
+					<label for="selecao-arquivo">Selecionar arquivo</label>
+					<input id= "selecao-arquivo" type="file"  name="arquivo">
+					<label for="selecao-arquivo">Selecionar arquivo</label>
+					<input id= "selecao-arquivo" type="file"  name="arquivo2">
+					<label for="selecao-arquivo">Selecionar arquivo</label>
+					<input id= "selecao-arquivo" type="file"  name="arquivo3">
+				</form>
+
+				<p>Na falta de documento, o cadastro está sujeito a <b>REPROVAÇÃO</b>.</p>
+				<input class="cadastro_submit" type="submit" value="ENVIAR">
+			</form>
+		</div>
+	</main>
+</body>
+</html>
